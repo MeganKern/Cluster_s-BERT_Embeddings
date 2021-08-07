@@ -1,8 +1,5 @@
 # Cluster_BERT_Embeddings
 
-Final Product:
+To cluster papers in Physics by subfield each paper is embedded in a sentence vector, then all are clustered by K-means.  
 
-Paper abstract -> Sentence Embedding ->  Category ---- rewrite in sentences
-
-
-Abstracts scraped from arXiv. Dataset balenced by removeing abstracts in overrepresented category tags. A modified version of BERT called sentence-BERT created by Nils Reimers and Iryna Gurevych is finetuned. The model parameters are imported with hugging Face's transformers library and fine-tuned useing PyTorch Lightining. Finialy K-Means clustering attempts to reproduce the origional abstract category partition.
+Abstracts scraped from arXiv. Dataset balanced by removing abstracts in over represented categories. A modified version of BERT called sentence-BERT created by Nils Reimers and Iryna Gurevych is fine-tuned. The model parameters are imported with Hugging Face's transformers library and fine-tuned using PyTorch Lightning. Finally, K-Means clustering attempts to reproduce the original category partitions.
